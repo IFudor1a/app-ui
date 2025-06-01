@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://yourdomain.com/app" href="app.jnlp">
+    <information>
+        <title>App</title>
+        <vendor>Alisher</vendor>
+        <description>JavaFX App with OpenWebStart</description>
+    </information>
+
+    <!-- Обновления -->
+    <update check="always" policy="always"/>
+
+    <!-- Укажем JavaFX runtime -->
+    <resources>
+        <j2se version="21+"/>
+
+        <!-- JavaFX-библиотеки -->
+        <jar href="javafx-controls.jar"/>
+        <jar href="javafx-fxml.jar"/>
+
+        <!-- Твой JAR -->
+        <jar href="app.jar" main="true"/>
+    </resources>
+
+    <application-desc main-class="app.ApplicationRunner"/>
+</jnlp>
