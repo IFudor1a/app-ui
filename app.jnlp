@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jnlp spec="1.0+" codebase="https://yourdomain.com/app" href="app.jnlp">
+<jnlp spec="1.0+" codebase="https://raw.githubusercontent.com/ifudor1a/app-ui/main/" href="app.jnlp">
     <information>
         <title>App</title>
         <vendor>Alisher</vendor>
         <description>JavaFX App with OpenWebStart</description>
     </information>
-
+    <security>
+        <all-permissions/>
+    </security>
     <!-- Обновления -->
     <update check="always" policy="always"/>
 
@@ -18,7 +20,7 @@
         <jar href="javafx-fxml.jar"/>
 
         <!-- Твой JAR -->
-        <jar href="app.jar" main="true"/>
+        <jar href="app-1.0-SNAPSHOT.jar" main="true"/>
     </resources>
 
     <application-desc main-class="app.ApplicationRunner"/>
